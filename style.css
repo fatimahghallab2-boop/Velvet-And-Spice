@@ -185,3 +185,21 @@ footer span[dir="ltr"] {
     max-width: 700px;
     margin: 0 auto;
 }
+/* تعديلات خاصة بشاشات الجوال */
+@media (max-width: 768px) {*/
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+
+    .menu-container {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+}
