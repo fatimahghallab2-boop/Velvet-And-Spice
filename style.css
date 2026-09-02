@@ -139,6 +139,14 @@ a{
     direction: ltr;
     display: inline-block;
 }
+.menu-link a.active {
+    background-color: #ffffff;
+    color: #2b1d18;
+    border-radius: 12px;
+    padding: 10px;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
 /*contact style*/
 footer{
     direction: rtl;
