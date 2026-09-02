@@ -94,12 +94,15 @@ function filterd(selectedType){
 }
 // Handle click event on category links
 const link = document.querySelectorAll(".menu-link a");
-    link.forEach(item =>{
-        item.addEventListener("click",function(){
-            const categoryName = item.getAttribute("data-category");
-            filterd(categoryName);
-        });
+
+link.forEach(item => {
+    item.addEventListener("click", function() {
+        link.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+        const categoryName = item.getAttribute("data-category");
+        filterd(categoryName);
     });
+});
 // Display all items on initial load
 displayMenu(menuItems);
 
