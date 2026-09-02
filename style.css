@@ -186,60 +186,75 @@ footer span[dir="ltr"] {
     margin: 0 auto;
 }
 @media (max-width: 768px) {
-    /* ترتـيـب الهيدر والناف بار بدون تداخل */
+   
     header {
-        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 15px 10px;
+        padding: 12px 10px;
     }
 
-    header h1 {
-        font-size: 1.4rem; /* تصغير العنوان عشان يرتبك مكانه */
-        margin-bottom: 8px;
-        letter-spacing: 1px;
+    header h1.logo {
+        font-size: 1.3rem;
+        margin: 0 0 5px 0;
     }
 
-    header nav ul {
+    .nav-link {
+        position: static; 
+        transform: none;
         display: flex;
         justify-content: center;
         gap: 15px;
-        list-style: none;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 
-    header nav ul li a {
-        font-size: 0.95rem;
+    .nav-link a {
+        font-size: 0.9rem;
     }
 
     
-    .menu-filters, .filter-buttons {
+    #menu nav {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .menu-link {
         display: flex;
-        overflow-x: auto;
+        flex-wrap: nowrap; 
+        overflow-x: auto;  
         white-space: nowrap;
         gap: 10px;
-        padding: 10px;
+        padding: 10px 5px;
         width: 100%;
         box-sizing: border-box;
-        justify-content: flex-start; 
         -webkit-overflow-scrolling: touch;
+        direction: rtl; 
     }
 
-    .menu-filters::-webkit-scrollbar, 
-    .filter-buttons::-webkit-scrollbar {
-        display: none;
+    .menu-link::-webkit-scrollbar {
+        display: none; 
     }
 
+    .menu-link li {
+        flex-shrink: 0; 
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
 
-    .menu-container {
+  
+    #cards {
         grid-template-columns: 1fr; 
-        padding: 10px;
+        padding: 0 10px;
     }
 
     footer {
         text-align: center;
         padding: 20px 10px;
+    }
+
+    
+    body {
+        overflow-x: hidden;
     }
 }
