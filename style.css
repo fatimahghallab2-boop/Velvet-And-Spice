@@ -139,11 +139,9 @@ a{
     direction: ltr;
     display: inline-block;
 }
-.menu-link a.active {
+.menu-link li.active {
     background-color: #ffffff;
     color: #2b1d18;
-    border-radius: 12px;
-    padding: 10px;
     transform: translateY(-3px);
     transition: all 0.3s ease;
 }
