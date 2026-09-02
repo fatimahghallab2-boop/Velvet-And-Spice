@@ -185,41 +185,61 @@ footer span[dir="ltr"] {
     max-width: 700px;
     margin: 0 auto;
 }
-/* تعديلات خاصة بشاشات الجوال */
 @media (max-width: 768px) {
-
+    /* ترتـيـب الهيدر والناف بار بدون تداخل */
     header {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-
-    .menu-filters, .filter-buttons {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 10px;
     }
 
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem; /* تصغير العنوان عشان يرتبك مكانه */
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul li a {
+        font-size: 0.95rem;
+    }
+
+    
+    .menu-filters, .filter-buttons {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: flex-start; 
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu-filters::-webkit-scrollbar, 
+    .filter-buttons::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .menu-container {
+        grid-template-columns: 1fr; 
+        padding: 10px;
     }
 
     footer {
         text-align: center;
         padding: 20px 10px;
-    }
-
-    .menu-container {
-        grid-template-columns: 1fr; 
-        padding: 10px;
     }
 }
