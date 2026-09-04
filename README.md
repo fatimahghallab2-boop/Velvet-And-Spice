@@ -43,7 +43,7 @@ Through this project, I practiced:
 
 ## 🚀 Live Demo
 
-[View the live website]((https://fatimahghallab2-boop.github.io/Velvet-And-Spice/))
+[View the live website](https://fatimahghallab2-boop.github.io/Velvet-And-Spice/)
 
 ## 👩🏻‍💻 Author
 
