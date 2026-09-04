@@ -37,6 +37,10 @@ Through this project, I practiced:
 - Building responsive layouts and media queries with CSS.
 - Styling and designing a complete webpage from scratch.
 
+## Preview
+<img width="1883" height="1026" alt="Screenshot 2026-09-03 011803" src="https://github.com/user-attachments/assets/7185f284-caff-420f-b871-46923df1293b" />
+
+
 ## 🚀 Live Demo
 
 [View the live website]((https://fatimahghallab2-boop.github.io/Velvet-And-Spice/))
